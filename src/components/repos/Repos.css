@@ -1,0 +1,29 @@
+.repos-container {
+  padding: 1rem 5rem;
+  text-align: center;
+}
+.repo-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  border: 1px dotted gray;
+  margin: 0.5rem 0;
+  text-align: center;
+  align-items: center;
+}
+.repo-item > h4 {
+  color: crimson;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .repos-container {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 769px) and (min-width: 500px) {
+  .repos-container {
+    padding: 1rem;
+  }
+}

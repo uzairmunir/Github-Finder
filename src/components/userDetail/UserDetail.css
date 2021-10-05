@@ -1,0 +1,119 @@
+.user-detail-container {
+  margin-top: 2rem;
+  padding: 1rem 5rem;
+}
+.back-btn {
+  background-color: #efefef;
+  padding: 0.5rem 1rem;
+  border: 0;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.text-success {
+  color: rgb(17, 167, 17);
+  font-size: 1rem;
+}
+.text-danger {
+  color: rgb(230, 50, 50);
+}
+.user-info {
+  display: flex;
+  border: 1px dotted gray;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin: 1rem 0;
+  justify-content: space-around;
+}
+.row1 > img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 0.2rem;
+}
+.row2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+li {
+  padding: 1rem;
+  font-size: 1rem;
+}
+.row2 > h2 {
+  margin: 1rem;
+  text-transform: uppercase;
+}
+.row2 > h3 {
+  color: crimson;
+}
+.profile-btn {
+  max-width: 10rem;
+  padding: 0.5rem 1rem;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  border: 0;
+  outline: none;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  border-radius: 0.7rem;
+}
+.badges-container {
+  border: 1px dotted gray;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.badge-primary {
+  background-color: rgb(28, 57, 144);
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.3rem;
+}
+.badge-success {
+  background-color: rgb(27, 102, 27);
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.3rem;
+}
+.badge-light {
+  background-color: crimson;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.3rem;
+}
+.badge-dark {
+  background-color: #333;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.3rem;
+}
+/* Media Queries */
+@media (max-width: 500px) {
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .row1 {
+    flex: 1;
+  }
+  .user-detail-container {
+    padding: 1rem;
+  }
+  .badges-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    padding: 1rem 1.5rem;
+  }
+}
+@media (max-width: 769px) and (min-width: 500px) {
+  .badges-container {
+    padding: 1rem;
+  }
+  .user-detail-container {
+    padding: 1rem;
+  }
+}
